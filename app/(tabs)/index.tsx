@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <View style={styles.container}>
       {/* Title */}
-      <Text style={styles.title}>My Todo List</Text>
+      <Text style={styles.title}>My Todo List:</Text>
 
       {/* Todo Items */}
       <TodoItem text="Learn React Native" />
@@ -15,6 +15,9 @@ export default function Index() {
     </View>
   );
 }
+
+//commentaire 
+//commentaire
 
 const styles = StyleSheet.create({
   container: {
