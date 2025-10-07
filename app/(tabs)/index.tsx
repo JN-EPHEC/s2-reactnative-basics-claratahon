@@ -1,21 +1,23 @@
-import { ScrollView, StyleSheet } from "react-native";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import TodoItem from "../../components/TodoItem";
 
-const USERS_DATA = [
-  { id: '1', nom: 'Alice Martin', email: 'alice.martin@email.com' },
-  { id: '2', nom: 'Benjamin Dubois', email: 'ben.dubois@email.com' },
-  { id: '3', nom: 'Chloé Garcia', email: 'chloe.g@email.com' },
-  { id: '4', nom: 'David Petit', email: 'david.petit@email.com' },
-  { id: '5', nom: 'Émilie Rousseau', email: 'emilie.rousseau@email.com' },
-];
-
-
-export default function HomeScreen() {
+export default function Index() {
   return (
-      <ScrollView>
-        { /* Render the list of users using the UserItem component */ }
-      </ScrollView>
+    <View style={styles.container}>
+      {/* Title */}
+      <Text style={styles.title}>My Todo List:</Text>
+
+      {/* Todo Items */}
+      <TodoItem text="Learn React Native" />
+      <TodoItem text="Build a static UI" />
+      <TodoItem text="Practice with StyleSheet" />
+    </View>
   );
 }
+
+//commentaire 
+//commentaire
 
 const styles = StyleSheet.create({
   container: {
